@@ -1,0 +1,14 @@
+.contenedor{  width: 40px;
+    height: 40px;
+    border: 2px, solid;
+}
+.principal{ 
+display: grid;
+grid-template-columns: repeat(3,auto);
+margin: auto;
+width: 200px;
+}
+ 
+
+
+ 
