@@ -1,14 +1,68 @@
-.contenedor{  width: 40px;
-    height: 40px;
-    border: 2px, solid;
+body { background-image: url(../img/360_F_600910081_ZUJpUZpTTj2lJBuRpDtMFKs0OtOPuxl4.jpg) ;
+    background-size: cover;
+
 }
-.principal{ 
-display: grid;
-grid-template-columns: repeat(3,auto);
-margin: auto;
-width: 200px;
-}
- 
 
 
- 
+    h1 {
+        font-size: 50px;
+        font-family:  sans-serif;
+        color: #ff0000;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    h1:hover {
+        transform: scale(1.1);
+        
+    }
+
+
+
+
+
+.tablero{ display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.contenedor {width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #000000;
+    text-align: center;
+    align-items: center;
+    color: #ff0000;
+    border: 3px solid rgb(255, 0, 0);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.contenedor:hover {transform: scale(1.1);
+    cursor: pointer;
+}
+.msj{  
+    text-align: center;
+    margin-top: 50px;
+
+   
+}
+
+#Reiniciar {
+    border: 3px solid rgb(255, 0, 0) ;
+    font-weight: bold ;
+    color: white;
+    background-color: #000000;
+    transition: transform 0.2s ease-in-out;
+}
+ #Reiniciar:hover {  transform: scale(1.1);
+    
+
+ }
