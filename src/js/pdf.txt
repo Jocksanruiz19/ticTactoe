@@ -1,0 +1,55 @@
+bueno en mi proyecto del gato y el raton empece unidiendo las cosas del html a js con const = document.
+luego defini las combinaciones ganadoras
+añadi eventos click en cada elemento del contenedor en cada div
+si el contenedor ya estaba lleno por X o O, no hacia nada
+cuando toco un contenedor osea un div se pone una X 
+y con marthrandom hacia que la maquina escogiera al azar cualquier casilla 
+con esto if (espaciosLibres.length > 0) {
+      let aleatorio = Math.floor(Math.random() * espaciosLibres.length);
+      contenedor[espaciosLibres[aleatorio]].textContent = "O";
+      la maquina escogia al azar donde haya campo y asigna una O
+      function cargaDeGanadores() {
+  for (let i = 0; i < Victoria.length; i++) {
+    const [a, b, c] = Victoria[i];
+
+   
+    if (
+      contenedor[a].textContent &&
+      contenedor[a].textContent === contenedor[b].textContent &&
+      contenedor[a].textContent === contenedor[c].textContent
+    ) {
+     
+      mensaje.textContent= "Haz Ganado"; 
+      return true; 
+    }
+  }
+  return false; 
+
+  con el codigo de arriba  verificamos si hay un ganador y una combinacion ganadora y si hay una combinacion ganadora
+  muestra el mensaje Haz Ganado
+
+  bueno y lam parte final y una dd las mas importantes el boton de Reiniciar
+  hacemos un evento click y una function
+
+  Reiniciar.addEventListener("click", function () {
+  
+  for (let index = 0; index < contenedor.length; index++) {
+    contenedor[index].textContent = "";
+  }
+ 
+  mensaje.textContent = "";
+
+
+  lo que va a pasar es que el tocar el boton va a limpiar el contenido de los contenedores o los div 
+  y va a limpiar el mensaje 
+
+  al final del botton Reiniciar puse una alerta para al Reiniciar ponga un mensaje
+    alert("Suerte");
+
+
+
+
+
+    Y ese fue mi proyecto lamentablemente no lo pude terminar en el tiempo requerido me hicieron falta partes como el tablero que salga si perdi o empate y me vaya sumando los ganes y perdidas 
+    solo me dice que gane y sale abajo en la izquierda, prometo completar el proximo proyecto y poner todo mi desempeño me siento mal por no haber logrado el proyecto en el tiempo requerido 
+    pero eso solo va a ser ayuda para inpulsarme a aprender mas y meter mas desempeño desde el dia uno un error que no va a volver a pasar lo veran en mis proximos proyectos muchas gracias por su atencion espero y les guste mi proyecto visualmente es muy lindo. 
